@@ -1,4 +1,4 @@
-# PLEASE NOTE!
+# Please Note
 This README.md file was made in reference to the **README-Example.md** file uploaded on Discord Server 'IAT 355 Fall 2025' #resources channel. This file was uploaded by **'Koosha'** on October 14, 2024. 
 
 # **Personal Website for Assignment 2**
