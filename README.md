@@ -1,7 +1,7 @@
 # Please Note
 This README.md file was made in reference to the **README-Example.md** file uploaded on Discord Server 'IAT 355 Fall 2025' #resources channel. This file was uploaded by **'Koosha'** on October 14, 2024. 
 
-# **Personal Website for Assignment 2**
+# **Assignment 2 - Personal Website**
 
 ## **Project Overview**
 This project is personal portfolio website, intended to complete SFU IAT 355 Assignment 2. Landing page (index.html) contains information about my professional background, skills, education, and design experiences. On the other hand, Visualizations (visualizations.html) page contains examples of my visualizations, specifically a bar graph and creative graphics. Both pages were created with HTML, CSS, and Javascript. 
