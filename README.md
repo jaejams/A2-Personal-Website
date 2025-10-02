@@ -4,7 +4,7 @@ This README.md file was made in reference to the **README-Example.md** file uplo
 # **Personal Website for Assignment 2**
 
 ## **Project Overview**
-This project is partial portfolio website, intended to complete SFU IAT 355 Assignment 2. Landing page (index.html) contains information about my professional background, skills, education, and design experiences. On the other hand, Visualizations (visualizations.html) page contains examples of my visualizations, specifically a bar graph and creative graphics. Both pages were created with HTML, CSS, and Javascript. 
+This project is personal portfolio website, intended to complete SFU IAT 355 Assignment 2. Landing page (index.html) contains information about my professional background, skills, education, and design experiences. On the other hand, Visualizations (visualizations.html) page contains examples of my visualizations, specifically a bar graph and creative graphics. Both pages were created with HTML, CSS, and Javascript. 
 
 ## **Purpose**
 The purpose of the website is to showcase my character and skills as a prospective designer. As I will soon join the workforce, it is necessary to have documentation of what I have done so far to qualify for a job. By structuring such information in a readable website format, this website serves the purpose of letting the potential employers know about my knowledge in design, especially in terms of visualizations using SVG. 
