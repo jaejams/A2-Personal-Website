@@ -1,4 +1,4 @@
-# PLEASE NOTE: 
+# PLEASE NOTE!
 This README.md file was made in reference to the **README-Example.md** file uploaded on Discord Server 'IAT 355 Fall 2025' #resources channel. This file was uploaded by **'Koosha'** on October 14, 2024. 
 
 # **Personal Website for Assignment 2**
@@ -40,13 +40,16 @@ Following files were created for the Assignment 2:
     - As you download the files, you can open **visualization.html** to view my visualizations right away. There are two types of visualizations that can be seen in this file: bar graph and creative graphs, both created with SVG. 
 
 ### **Clone the Repository**
-   - To view or modify this project, clone the repository using Git:
-   ```bash
-   git clone https://github.com/yourusername/yourusername.github.io
-    ``
+   - To view or make edits to this project, clone the repository using the web URL:
+   https://github.com/jaejams/A2-Personal-Website.git
+
+   - GitHub respository can be viewed on their website as well:
+   https://github.com/jaejams/A2-Personal-Website#
+
 
 ### **Live Site**
-I have hosted these files on GitHub Pages, which can be accessed through here: [------------](https://----)
+I have hosted these files on GitHub Pages, which can be accessed through here: [https://jaejams.github.io/A2-Personal-Website/index.html](https://jaejams.github.io/A2-Personal-Website/index.html)
+
 
 # **Resources**
 Here are the list of websites used during this assignment. 
