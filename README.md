@@ -64,6 +64,22 @@ Here are the list of websites used during this assignment.
 - https://developer.mozilla.org/en-US/docs/Web/CSS/display
 - https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 - https://developer.mozilla.org/en-US/docs/Web/CSS/border-color
+- [Most frequently occurring text](https://exceljet.net/formulas/most-frequently-occurring-text)
+## Vegalite API
+- https://vega.github.io/vega-lite-api/
+- [Vega-Lite Chart Types](https://observablehq.com/@observablehq/vega-lite-chart-types)
+- [Input: Select](https://observablehq.com/@observablehq/input-select)
+- https://observablehq.com/@jonfroehlich/creating-interactive-choropleths-in-vega-lite
+- https://observablehq.com/@vega/vega-lite-api-v5
+- https://vega.github.io/vega-lite/docs/selection.html
+- https://vega.github.io/vega/docs/transforms/filter/
+- https://vega.github.io/vega-lite/docs/datum.html
+- https://vega.github.io/vega-lite/docs/sort.html
+- https://vega.github.io/vega-lite/docs/fold.html
+## Vegalite Tooltip
+- https://github.com/vega/vega-tooltip/blob/d942e0141813678c5d5a84dc884b2c75bd0b9a5f/docs/creating_your_tooltip.md?plain=1
+- https://vega.github.io/vega-tooltip/index.html
+
 
 
 
