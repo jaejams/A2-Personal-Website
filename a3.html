@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Visualizations</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite-api@5.6.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-tooltip"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+
+
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body id="a3">
+    <header>
+        <div class="top-nav-bar">
+            <div>
+                <a href="index.html">
+                    <h2>JAE EUN KIM</h2>
+                </a>
+            </div>
+            <div class="hamburger-menu">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+
+            </div>
+
+
+            <nav class="top-nav hide">
+                <a href="index.html#frame-card" class="nav-text">
+                    <h2>My Work</h2>
+                </a>
+                <a href="a2.html" class="nav-text">
+                    <h2>A2</h2>
+                </a>
+                <a href="a3.html" class="nav-text">
+                    <h2>A3</h2>
+                </a>
+                <a href="https://drive.google.com/file/d/1AS_eMRJOMbJBY04bGSU2nru8wktCaXKj/view?usp=sharing"
+                    target="_blank" class="nav-text">
+                    <h2>Resume</h2>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <h1>A3 Visualizations</h1>
+    <section class="divider"></section>
+
+    <section id="dataset-intro">
+        <h2>Variable Dataset Explanation</h2>
+        <div class="dataset-flexbox">
+            <div class="flexbox-row">
+                <div class="flexbox-header one">
+                    <p>Variable</p>
+                </div>
+                <div class="flexbox-header two">
+                    <p>Data Type</p>
+                </div>
+                <div class="flexbox-header three">
+                    <p>Explanation</p>
+                </div>
+            </div>
+
+            <div class="flexbox-row">
+                <div class="flexbox-blue one">
+                    <p>Name</p>
+                </div>
+                <div class="flexbox-blue two">
+                    <p>Categorical</p>
+                </div>
+                <div class="flexbox-blue three">
+                    <p>Names are categorical, as each game has unique title however without particular order between
+                        them.</p>
+                </div>
+            </div>
+
+            <div class="flexbox-row">
+                <div class="flexbox-grey one">
+                    <p>Platform</p>
+                </div>
+                <div class="flexbox-grey two">
+                    <p>Categorical</p>
+                </div>
+                <div class="flexbox-grey three">
+                    <p>This is categorical as each game has unique platform assigned, however without no ranked
+                        relationship between them. </p>
+                </div>
+            </div>
+
+            <div class="flexbox-row">
+                <div class="flexbox-blue one">
+                    <p>Year</p>
+                </div>
+                <div class="flexbox-blue two">
+                    <p>Numerical or Ordinal</p>
+                </div>
+                <div class="flexbox-blue three">
+                    <p>Years can be ordered in a number format, especially for a visualization that uses changing data
+                        over time. However, it can be represented as discrete time points, for example in a bar graph.
+                    </p>
+                </div>
+            </div>
+
+            <div class="flexbox-row">
+                <div class="flexbox-grey one">
+                    <p>Genre</p>
+                </div>
+                <div class="flexbox-grey two">
+                    <p>Categorical</p>
+                </div>
+                <div class="flexbox-grey three">
+                    <p>This is categorical as each game is categorized with a certain genre without ordered
+                        relationship. </p>
+                </div>
+            </div>
+
+            <div class="flexbox-row">
+                <div class="flexbox-blue one">
+                    <p>Publisher</p>
+                </div>
+                <div class="flexbox-blue two">
+                    <p>Categorical</p>
+                </div>
+                <div class="flexbox-blue three">
+                    <p>This is categorical as distinguishable publisher label is assigned to each game, however without
+                        order between them.</p>
+                </div>
+            </div>
+
+            <div class="flexbox-row">
+                <div class="flexbox-grey one">
+                    <p>NA_Sales</p>
+                </div>
+                <div class="flexbox-grey two">
+                    <p>Numerical</p>
+                </div>
+                <div class="flexbox-grey three">
+                    <p>This is numerical as it represents measurable sales volume in millions. </p>
+                </div>
+            </div>
+
+            <div class="flexbox-row">
+                <div class="flexbox-blue one">
+                    <p>EU_Sales</p>
+                </div>
+                <div class="flexbox-blue two">
+                    <p>Numerical</p>
+                </div>
+                <div class="flexbox-blue three">
+                    <p>Same as above, this is numerical but for European market. </p>
+                </div>
+            </div>
+
+            <div class="flexbox-row">
+                <div class="flexbox-grey one">
+                    <p>JP_Sales</p>
+                </div>
+                <div class="flexbox-grey two">
+                    <p>Numerical</p>
+                </div>
+                <div class="flexbox-grey three">
+                    <p>Same as above, this is numerical but for Japanese market.</p>
+                </div>
+            </div>
+
+            <div class="flexbox-row">
+                <div class="flexbox-blue one">
+                    <p>Other_Sales</p>
+                </div>
+                <div class="flexbox-blue two">
+                    <p>Numerical</p>
+                </div>
+                <div class="flexbox-blue three">
+                    <p>Same as above, this is numerical but for other regions. </p>
+                </div>
+            </div>
+
+            <div class="flexbox-row">
+                <div class="flexbox-grey one">
+                    <p>Global_Sales</p>
+                </div>
+                <div class="flexbox-grey two">
+                    <p>Numerical</p>
+                </div>
+                <div class="flexbox-grey three">
+                    <p>Same as above, this is numerical, however, this represents the sum of all sales across the world.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <h2>Global Sales Key insights</h2>
+        <p>This was calculated primarily through Excel functions:</p>
+        <ul>
+            <li>AVERAGE() to calculate the mean</li>
+            <li>MEDIAN() to calculate the median</li>
+            <li>MODE.SNGL() to calculate the single mean within entire column of global sales data</li>
+            <li>MAX({column of data})-MIN({column})to calculate the range</li>
+            <li>STDEV() to calculate the standard deviation</li>
+        </ul>
+        <p>Overall, global sales data was characterized by a strong <strong>right-skew</strong>. That is, there are few
+            high-value items that increase the average significantly, while most of the items scored significantly less
+            global sales comparatively. </p>
+            <br>
+        <div class="dataset-flexbox">
+            <div class="flexbox-row">
+                <div class="flexbox-header one">
+                    <p>Statistics Measure</p>
+                </div>
+                <div class="flexbox-header two">
+                    <p>Value (Number of Copies in Millions)</p>
+                </div>
+
+            </div>
+
+            <div class="flexbox-row">
+                <div class="flexbox-blue one">
+                    <p>Mean</p>
+                </div>
+                <div class="flexbox-blue two">
+                    <p>0.54</p>
+                </div>
+
+            </div>
+
+            <div class="flexbox-row">
+                <div class="flexbox-grey one">
+                    <p>Median</p>
+                </div>
+                <div class="flexbox-grey two">
+                    <p>0.17</p>
+                </div>
+
+            </div>
+
+            <div class="flexbox-row">
+                <div class="flexbox-blue one">
+                    <p>Mode</p>
+                </div>
+                <div class="flexbox-blue two">
+                    <p>0.02</p>
+                </div>
+
+            </div>
+
+            <div class="flexbox-row">
+                <div class="flexbox-grey one">
+                    <p>Range</p>
+                </div>
+                <div class="flexbox-grey two">
+                    <p>82.73</p>
+                </div>
+
+            </div>
+
+            <div class="flexbox-row">
+                <div class="flexbox-blue one">
+                    <p>Standard Deviation</p>
+                </div>
+                <div class="flexbox-blue two">
+                    <p>1.56</p>
+                </div>
+
+            </div>
+
+        </div>
+        <br>
+        <p>Regarding the degree of skewedness, it can be observed that the <strong>mean (0.54)</strong> is significantly higher than both the median (0.17) and the mode (0.02). Such a difference indicates that the data is highly <strong>right-skewed.</strong> A small number of games, such as Wii Sports (the highest global sales at 82.74 million copies), Super Mario Bros (second highest value at 40.24 million copies), and Mario Kart Wii (third highest value at 35.82 million copies) excessively increase the average value. On the other hand, median, the middle value remains at only 0.17 million, indicating that half of all games were sold less than 0.17 million copies. </p>
+        <br>
+        
+    </section>
+    <section class="divider"></section>
+
+    <section id="frame-viz">
+        <div class="first-container">
+            <div class="first-selector">
+                <div>
+                    <label for="platformSelect">Platform</label><br>
+                    <select id="platformSelect" multiple size="10"></select>
+                </div>
+                <div>
+                    <label for="genreSelect">Genre</label><br>
+                    <select id="genreSelect" multiple size="10"></select>
+                </div>
+            </div>
+
+            <div id="first">
+                <p>Please wait for the visualization!</p>
+            </div>
+            <section class="divider"></section>
+        </div>
+        <div class="second-container">
+            <div class="second-selector">
+                <div>
+                    <label for="platformSelectTwo">Platform</label><br>
+                    <select id="platformSelectTwo" multiple size="10"></select>
+                </div>
+                <div>
+                    <label for="genreSelectTwo">Genre</label><br>
+                    <select id="genreSelectTwo" multiple size="10"></select>
+                </div>
+                <div>
+                    <label for="publisherSelectTwo">Publisher</label><br>
+                    <select id="publisherSelectTwo" multiple size="10"></select>
+                </div>
+            </div>
+            <p>Please click on an area in the Area Map to see data specific to a genre!</p>
+            <div id="second">
+                <p>Please wait for the visualization!</p>
+            </div>
+            <section class="divider"></section>
+        </div>
+        <div class="third-container">
+            <div id="third">
+                <p>Please wait for the visualization!</p>
+            </div>
+            <section class="divider"></section>
+        </div>
+
+        <div class="fourth-container">
+            <div id="fourth">
+                <p>Please wait for the visualization!</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="divider"></section>
+
+    <section id="frame-up-arrow">
+        <p>Scroll Up!</p>
+    </section>
+
+
+
+    <footer>
+        <div class="footer-flex-left">
+            <h3>✨Contact me✨</h3>
+            <h4><a href="mailto:jaeeunk@sfu.ca">jaeeunk@sfu.ca</a></h4>
+            <h4><a href="https://www.linkedin.com/in/jae-eun-kim/" target="_blank">My LinkedIn</a></h4>
+            <h4><a href="tel:+1-778-866-8123">778 866 8123</a></h4>
+
+        </div>
+
+        <div class="footer-flex-right">
+            <h3>@Jae Eun Kim 2025</h3>
+        </div>
+
+    </footer>
+    <script type="module" src="js/first.js"></script>
+    <script type="module" src="js/second.js"></script>
+    <script type="module" src="js/third.js"></script>
+    <script type="module" src="js/fourth.js"></script>
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/vis.js"></script>
+
+
+
+</body>
+
+</html>

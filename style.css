@@ -23,7 +23,7 @@ h1 {
   font-weight: 400;
   word-wrap: break-word;
   margin: auto 0;
-  position: relative; 
+  position: relative;
 }
 
 h2 {
@@ -32,6 +32,11 @@ h2 {
   font-weight: 400;
   word-wrap: break-word;
   margin: auto 0;
+}
+
+#a3 h2{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 h3 {
@@ -82,13 +87,13 @@ a:hover {
 }
 
 .top-nav-bar.hide {
-    display: none;
+  display: none;
 }
 
 
 .top-nav {
   position: fixed;
-  z-index:999;
+  z-index: 999;
   width: 94%;
   top: 6rem;
   left: 18px;
@@ -106,7 +111,7 @@ a:hover {
   width: 2.5rem;
   height: 3px;
   margin-bottom: 10px;
-  background-color: black; 
+  background-color: black;
   /* background-color is the colour of the hamburger icon */
   cursor: pointer;
 }
@@ -119,11 +124,11 @@ a:hover {
 }
 
 .frame-text,
-.frame-graphics{
+.frame-graphics {
   flex: 1;
 }
 
-.frame-graphics{
+.frame-graphics {
   display: flex;
   align-items: center;
   align-content: center;
@@ -143,7 +148,7 @@ a:hover {
   margin-bottom: 2rem;
 }
 
-.skills-details{
+.skills-details {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -151,18 +156,18 @@ a:hover {
 }
 
 .education span,
-.skills-details p{
+.skills-details p {
   background-color: var(--bg-color-dark);
   padding: 0.5rem;
   border-radius: 4px;
-  
+
 }
 
-.education-details li{
+.education-details li {
   margin-bottom: 2rem;
 }
 
-.skills-details p{
+.skills-details p {
   width: 14rem;
   display: flex;
   justify-content: center;
@@ -179,7 +184,7 @@ a:hover {
 
 
 .proj-card {
-  display: flex; 
+  display: flex;
   flex-direction: column;
   flex: 1;
   border-style: solid;
@@ -213,26 +218,98 @@ footer {
   flex: 2;
 }
 
-.cute-graphics{
+.cute-graphics {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
 #cute-graphics-container,
-#cute-graphics-container-two{
-  flex: 1;  
+#cute-graphics-container-two {
+  flex: 1;
 }
 
-#frame-up-arrow{
+#frame-up-arrow {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
   padding: 1rem;
-  border-radius: 8px; 
+  border-radius: 8px;
   background-color: var(--bg-color-dark);
   cursor: pointer;
+}
+
+/* A3 */
+
+#frame-viz {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.first-container,
+.second-container,
+.third-container,
+.fourth-container {
+  flex: 1;
+}
+
+
+.first-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.first-selector,
+#first {
+  flex: 1;
+}
+
+.first-selector,
+.second-selector {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.dataset-flexbox {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexbox-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flexbox-header p {
+  font-weight: bold;
+  color:aliceblue
+}
+
+
+.flexbox-header {
+  background-color: rgb(70, 70, 70);
+}
+
+.flexbox-blue {
+  background-color: aliceblue;
+}
+
+.flexbox-grey{
+  background-color: rgb(231, 231, 231);
+}
+
+.flexbox-header,
+.flexbox-blue,
+.flexbox-grey {
+  flex: 1;
+  padding: 0.7rem;
+}
+
+#dataset-intro .three {
+  flex: 2;
 }
 
 @media screen and (min-width: 1175px) {
@@ -249,11 +326,12 @@ footer {
     margin-right: 20px;
     background: none;
   }
-  
+
   .top-nav a {
     display: inline-block;
     padding: 0 20px;
   }
+
   .top-nav a:hover {
     background-color: var(--hover-text);
     border-radius: 5px;
@@ -267,8 +345,8 @@ footer {
 }
 
 
-@media screen and (max-width: 1200px){
-    #frame-first {
+@media screen and (max-width: 1200px) {
+  #frame-first {
     flex-direction: column;
   }
 }
@@ -278,7 +356,7 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-    
+
   }
 
   #frame-card {
@@ -286,6 +364,6 @@ footer {
   }
 
   body {
-  padding: 0 1rem;
+    padding: 0 1rem;
   }
 }
