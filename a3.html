@@ -204,7 +204,7 @@
         </div>
 
         <h2>Global Sales Key insights</h2>
-        <p>This was calculated primarily through Excel functions:</p>
+        <p>This was calculated through Excel functions:</p>
         <ul>
             <li>AVERAGE() to calculate the mean</li>
             <li>MEDIAN() to calculate the median</li>
@@ -215,7 +215,7 @@
         <p>Overall, global sales data was characterized by a strong <strong>right-skew</strong>. That is, there are few
             high-value items that increase the average significantly, while most of the items scored significantly less
             global sales comparatively. </p>
-            <br>
+        <br>
         <div class="dataset-flexbox">
             <div class="flexbox-row">
                 <div class="flexbox-header one">
@@ -279,13 +279,27 @@
 
         </div>
         <br>
-        <p>Regarding the degree of skewedness, it can be observed that the <strong>mean (0.54)</strong> is significantly higher than both the median (0.17) and the mode (0.02). Such a difference indicates that the data is highly <strong>right-skewed.</strong> A small number of games, such as Wii Sports (the highest global sales at 82.74 million copies), Super Mario Bros (second highest value at 40.24 million copies), and Mario Kart Wii (third highest value at 35.82 million copies) excessively increase the average value. On the other hand, median, the middle value remains at only 0.17 million, indicating that half of all games were sold less than 0.17 million copies. </p>
+        <p>Regarding the degree of skewedness, it can be observed that the <strong>mean (0.54)</strong> is significantly
+            higher than both the <strong>median (0.17)</strong> and the <strong>mode (0.02)</strong>. Such a difference
+            indicates that the data is highly <strong>right-skewed.</strong> That is, a small number of games, such as
+            Wii Sports (the highest global sales at 82.74 million copies), Super Mario Bros (second highest value at
+            40.24 million copies), and Mario Kart Wii (third highest value at 35.82 million copies) excessively increase
+            the average value. On the other hand, median, the middle value remains at only 0.17 million, indicating that
+            half of all games were sold less than 0.17 million copies. </p>
         <br>
-        
+        <p>The range of 82.73 million additionally shows that there is an enormous difference between the lowest and the
+            highest-selling game. The standard deviation of 1.56 million, which is also significantly high compared to
+            median, further confirms that there are a few outliers that deviates from the majority of data points.
+            Overall, these measures show that there is a large variability in global sales data points.</p>
     </section>
     <section class="divider"></section>
 
     <section id="frame-viz">
+        <h1>1. Global Sales by Genre and Platform</h1>
+        <p>When I generated graphs for sales in all genres across all platforms, there were platforms definitely standing out of others. For example, for 'sports' and 'racing' games, the bar for 'Wii' is enormously higher than other platforms. In fact, the top scoring platform for all genres, except for Action, were taken up by platforms developed by Nintendo, including Wii, Game Boy, DS, and Nintendo 64. As a person who grew up playing Playstation, this was a surprising find. </p>
+        <br>
+        <p>When I focused on graphs for platforms I am the most familiar with, PS2, PS3, and Wii, which all represent the platforms in 2000s to early 2010s, it could be observed that for some genres, PS surpassed the sales of Wii. For example, for 'Strategy' genre, PS2 sold more copies than Wii. Then, it could be inferred that historically, most game categories were precedented by Nintendo which explains their higher rankings in most categories.</p>
+        <br>
         <div class="first-container">
             <div class="first-selector">
                 <div>
@@ -296,6 +310,7 @@
                     <label for="genreSelect">Genre</label><br>
                     <select id="genreSelect" multiple size="10"></select>
                 </div>
+                <p>Please feel free to select other categories. <br>To select multiple, use ctrl + click. <br>Click inside the list, then use ctrl + A to select all. </p>
             </div>
 
             <div id="first">
@@ -303,6 +318,12 @@
             </div>
             <section class="divider"></section>
         </div>
+        <h1>2. Sales Over Time by Platform and Genre</h1>
+        <br>
+        <p>With area map, I was able to visualize the overall continuous trend of the game industry over time, distinguished by genres. It was interesting that all genres roughly follow the same patterns; for example, there was a huge dip of sales across all genres in 2005, while there was a notable peak in 2009, followed by a steep decline in the following years. This makes me wonder if financial crisis was the only factors that caused such decreases and why the game industry was not able to recover since the late 2000s. </p>
+        <br>
+        <p>With stacked bar graph, I was able to see how the sales shift according to novelty of a game platform. For example, comparing the graphs between PS2, PS3, and PS4, it can be observed that decline of PS2 sales was taken up by significant elevation of PS3 sales, and then from PS3 to PS4. This shows how a certain time period is defined by certain game platforms.  </p>
+        <br>
         <div class="second-container">
             <div class="second-selector">
                 <div>
@@ -317,25 +338,37 @@
                     <label for="publisherSelectTwo">Publisher</label><br>
                     <select id="publisherSelectTwo" multiple size="10"></select>
                 </div>
+                <p>Please feel free to select other categories. <br>To select multiple, use ctrl + click. <br>Click inside the list, then use ctrl + A to select all. </p>
+
             </div>
+            <br>
             <p>Please click on an area in the Area Map to see data specific to a genre!</p>
             <div id="second">
                 <p>Please wait for the visualization!</p>
             </div>
-            <section class="divider"></section>
+        <section class="divider"></section>
+    </div>
+    <h1>3. Regional Sales vs. Platform</h1>
+    <p>Examining this particular horizontal stacked bar graph caused an exciting twist from the conclusions I made in visualization 1. Since visualization 1 showed that almost the top sales across almost all categories were taken up by platforms by Nintendo (e.g. Wii, DS, Game Boy, Nintendo Entertainment System), I expected that the highest total sales would also be taken by one of Nintendo's platforms. However, it revealed that PS2 in fact made the highest number of sales. This, then, explains why PS2 was the most familiar game platform from my childhood!  </p>
+    <br>
+    <p>This graph also visualizes in which region each platform recorded the highest/lowest sales. Identifying highest/lowest sales was the easiest for the bar that has much contrasts across the categories. For example, Xbox 360 recorded the highest sales in North America, followed by Europe, however minimal sales in other regions and Japan. As an immigrant who came to Canada from Korea in early 2010s, this explains why I had absolutely no idea what Xbox was when I first moved here. </p>
+    <br>
+    <div class="third-container">
+        <div id="third">
+            <p>Please wait for the visualization!</p>
         </div>
-        <div class="third-container">
-            <div id="third">
-                <p>Please wait for the visualization!</p>
-            </div>
-            <section class="divider"></section>
+        <section class="divider"></section>
+    </div>
+    <h1>4. Tell Us a Visual Story</h1>
+    <p>I created this line graph to examine if the <strong>count</strong> of the number of games released per year corresponds to visualization 2, which represents the <strong>global sales</strong> over time. It can first be observed that the peak of the count was at 2009. This supports that while the sales peaked, most number of games were released.</p>
+    <br>
+    <p>However, there were some differences between the two graphs. For example, there was an increase in sales in 2004, however a significant dip in 2005. On the other hand, in terms of the number of games released, there was significantly lower number of games released in 2004 (count: 763), compared to 2005 (count: 1008). It was interesting to communicate by visualization of how expectations around releases of games do not necessarily align with the sales.</p>
+    <br>
+    <div class="fourth-container">
+        <div id="fourth">
+            <p>Please wait for the visualization!</p>
         </div>
-
-        <div class="fourth-container">
-            <div id="fourth">
-                <p>Please wait for the visualization!</p>
-            </div>
-        </div>
+    </div>
 
     </section>
 
